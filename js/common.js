@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	$(function(){
+	    $(window).scroll(function() {
+	        var top = $(document).scrollTop();
+	        if (top > 270)
+	        	$(".fixed-top-menu").slideDown();
+	        else 
+	        	$(".fixed-top-menu").slideUp();
+	    });	
+	});
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
@@ -15,7 +24,8 @@ $(document).ready(function() {
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	$(".header-nav").navigation();
+	$(".fixed-top-menu").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/

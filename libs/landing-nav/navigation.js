@@ -21,7 +21,7 @@ $.fn.navigation = function() {
 		$("html, body").stop().animate({ 
 			scrollTop: offsetTop
 		}, {
-			duration: 300,
+			duration: 1700,
 			complete: function() {
 				menuItems
 				.parent().removeClass("active")
