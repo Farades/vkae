@@ -9,6 +9,15 @@ $(document).ready(function() {
 	        	$(".fixed-top-menu").slideUp();
 	    });	
 	});
+	//Видеогалерея
+	$('.bxslider').bxSlider({
+	  video: true,
+	  useCSS: false
+	});
+	//Фотогалерея
+	$( function() {
+	    $( '#gallery' ).jGallery();
+	} );
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
