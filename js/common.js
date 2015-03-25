@@ -9,6 +9,13 @@ $(document).ready(function() {
 	        	$(".fixed-top-menu").slideUp();
 	    });	
 	});
+	//Всплывающее окно формы обратной связи
+	$(".close_feedback").click(function() {
+		$(".parent-feedback").hide();
+	});
+	$(".show_feedback").click(function() {
+		$(".parent-feedback").show();
+	});
 	//Видеогалерея
 	$('.bxslider').bxSlider({
 	  video: true,
@@ -88,11 +95,39 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
+	$(".feedback form").submit(function() {
 		$.ajax({
 			type: "GET",
 			url: "mail.php",
-			data: $("form").serialize()
+			data: $(".feedback form").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
+	$(".sale-content-form form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $(".sale-content-form form").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
+	$(".wholesale-form form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $(".wholesale-form form").serialize()
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {

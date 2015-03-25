@@ -34,11 +34,24 @@
 				<li><a href="#video">Видео</a></li>
 				<li><a href="#reviews">Отзывы</a></li>
 				<li><a href="#contacts">Контакты</a></li>
-				<li><a href="#" class="fixed-button">Заказать звонок</a></li>
+				<li><a style="cursor: pointer;"  class="fixed-button show_feedback">Заказать звонок</a></li>
 				<div class="clear"></div>
 			</ul>
 		</div>
 		
+	</div>
+	<div class="parent-feedback">
+		<div class="feedback">
+			<div class="close_feedback"></div>
+			<h2>Оставьте заявку</h2>
+			<p>и наши менеджеры обязательно свяжутся с Вами.</p><br>
+				<form method="GET">
+					<input type="text" required="" placeholder="Ваше Имя" placeholder="Email" name="name">
+					<input type="email" placeholder="Ваш e-mail" name="email">
+					<input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="" placeholder="Ваш телефон" name="phone">
+					<input type="submit" value="Отправить" class="btn">
+				</form>
+		</div>
 	</div>
 
 	<header>
@@ -59,7 +72,7 @@
 			<div class="header-contacts">
 				<a href="tel:+74951231212">+7 (495) <span>123-12-12</span></a><br>
 				<a href="mailto:test@test.ru">info@vkao.ru</a><br><br>
-				<button class="btn">Заказать звонок</button>
+				<button class="btn show_feedback">Заказать звонок</button>
 			</div>
 			<div class="header-nav">
 				<ul>
@@ -84,13 +97,10 @@
 					<div class="countdown" date-time="2015-04-12"></div>
 				</div>
 				<div class="sale-content-form">
-					<form>
-						<label>Имя:</label>
-						<input type="text">
-						<label>E-mail:</label>
-						<input type="email">
-						<label>Телефон:</label>
-						<input id="tel" type="tel">
+					<form method="GET">
+						<input type="text" required="" placeholder="Ваше Имя" placeholder="Email" name="name">
+						<input type="email" placeholder="Ваш e-mail" name="email">
+						<input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="" placeholder="Ваш телефон" name="phone">
 						<input type="submit" value="Отправить" class="btn">
 					</form>
 				</div>
@@ -130,7 +140,7 @@
 						</li>
 						<div class="clear"></div>
 					</ul>
-					<button class="btn">Получить эмоции</button>
+					<button class="btn show_feedback">Получить эмоции</button>
 				</div>
 			</div>
 		</div>
@@ -142,10 +152,12 @@
 				<p>При покупке более 5 путевок одновременно Вы получите <span style="color: red; font-weight: bold;">приятные скидки.</span><br><span style="color: #177bbb;text-shadow: 1px 1px 1px #000; ">Всего лишь оставьте заявку и наш менеджер свяжется с вами.</span></p>
 			</div>
 			<div class="wholesale-form">
-				<input type="text" placeholder="Ваше Имя">
-				<input type="email" placeholder="Ваша почта">
-				<input id="tel" type="tel" maxlenght="10" placeholder="Ваш Телефон">
-				<input type="submit" value="Отправить" class="btn">
+				<form method="GET">
+					<input type="text" required="" placeholder="Ваше Имя" placeholder="Email" name="name">
+					<input type="email" placeholder="Ваш e-mail" name="email">
+					<input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="" placeholder="Ваш телефон" name="phone">
+					<input type="submit" value="Отправить" class="btn">
+				</form>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -254,7 +266,14 @@
 	<div class="contacts" id="contacts">
 		<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Qt_Em4zxyXlpIQW6mvwPXc072_sXbcd9&width=100%"></script>
 		<div class="content-wrap">
-			<!-- <div class="test">dwadaw</div> -->
+			<div class="contact-title">
+				<h2><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Наше местоположение&nbsp;&nbsp;&nbsp;<i class="fa fa-car"></i></h2>
+			</div>
+			<div class="contacts-desc">
+				<p>Наш лагерь находится на уникальной территории на береговой линии Азовского моря в охраняемом законом заповеднике</p>
+				<p style="margin-bottom: 0px;">По всем вопросам обращаться по тел.: <br>+7 (495) 123-12-12</p>
+				<p>GPS-данные:  45°28′19.75″N 36°11′51.54″E</p>
+			</div>
 		</div>
 	</div>
 	<div class="footer">

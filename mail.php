@@ -1,12 +1,14 @@
 <?php
 
-$recepient = "youmail@ya.ru";
-$sitename = "Название сайта";
+$recepient = "creg2007@gmail.com";
+$sitename = "Восточно-Крымская археологическая экспедиция";
 
 $name = trim($_GET["name"]);
 $phone = trim($_GET["phone"]);
-$text = trim($_GET["text"]);
+$email = trim($_GET["email"]);
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
-$message = "Имя: $name \nТелефон: $phone \nТекст: $text";
+$message = "Имя: $name \nТелефон: $phone \nEmail: $email";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
+
+?>
