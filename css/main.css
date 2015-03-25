@@ -448,6 +448,7 @@ a {
 	background-image: url(../img/reviews_bg.png);
 	background-repeat: repeat;
 	background-position: 0% 0%;
+	border-bottom: 3px solid #666;
 }
 .reviews h2 {
 	text-align: center;
@@ -489,4 +490,11 @@ a {
 .contacts {
 	height: 700px;
 	background-color: #ccc;
+	border-bottom: 3px solid #666;
+}
+.footer p {
+	text-align: center;
+	font-size: 30px;
+	padding: 50px;
+	color: #177bbb;
 }
